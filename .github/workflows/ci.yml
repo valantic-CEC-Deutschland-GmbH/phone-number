@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  tests_coverage:
+  analyse:
     runs-on: ubuntu-latest
 
     steps:
