@@ -49,13 +49,6 @@ jobs:
           name: test-output
           path: public
 
-  deploy_to_pages:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Move coverage to public directory
         run: mv tests/_output/coverage public/
 
@@ -64,3 +57,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
+          
