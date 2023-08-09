@@ -21,6 +21,9 @@ jobs:
       - name: Validate composer.json
         run: composer validate
 
+      - name: Run tests
+        run: composer test
+
       - name: Install dependencies
         run: composer install
 
@@ -30,8 +33,6 @@ jobs:
       - name: Check static analysis (PHPStan)
         run: composer stan
 
-#      - name: Run tests
-#        run: composer test
 
       - name: Check markdown files
         run: composer md-check
