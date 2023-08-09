@@ -1,9 +1,9 @@
-# your-package
+# phone-number
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
 
 # Description
- - Adds spryker xxx to yyy
+ - Provides a service to validate phone numbers against international standards i.e. E164.
 
 # Install
 `composer require valantic-spryker/example-package`
