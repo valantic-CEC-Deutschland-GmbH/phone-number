@@ -33,28 +33,5 @@ jobs:
       - name: Check static analysis (PHPStan)
         run: composer stan
 
-
-      - name: Check markdown files
+      - name: Check messdetector
         run: composer md-check
-
-      - name: Save test output
-        run: |
-          mkdir -p tests/_output/
-          cp -r tests/_output/coverage public/
-        if: always()
-
-      - name: Upload test output artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-output
-          path: public
-
-      - name: Move coverage to public directory
-        run: mv tests/_output/coverage public/
-
-      - name: Deploy to Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
-          
