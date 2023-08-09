@@ -26,13 +26,5 @@ XDEBUG:
 
 - Run Tests with coverage: `XDEBUG_MODE=coverage vendor/bin/codecept run --env standalone --coverage --coverage-xml --coverage-html`
 
-# HowTo Setup new Repo
- - create new project (https://github.com/organizations/valantic-CEC-Deutschland-GmbH/repositories/new)
-   - visibility -> public
- - push in repo boilerplate copied of example-package (https://github.com/valantic-CEC-Deutschland-GmbH/spryker-vendor-template)
- - search for string `example-package` and add your descriptions
- - add your custom code / copy in your code / rename namespace to ValanticSpryker
- - add repo "topics" spryker / spryker-eco / spryker-shop based on your modules
-
 # use nodejs
  - docker run -it --rm --name my-running-script -v "$PWD":/data node:18 bash
