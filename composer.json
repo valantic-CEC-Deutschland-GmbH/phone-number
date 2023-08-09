@@ -2,6 +2,7 @@
     "name": "valantic-spryker/phone-number",
     "type": "library",
     "description": "Provides a service to validate phone numbers against international standards i.e. E164.",
+    "license": "proprietary",
     "require": {
         "php": ">=8.0",
         "giggsey/libphonenumber-for-php": "^8.13"
