@@ -6,7 +6,7 @@
  - Provides a service to validate phone numbers against international standards i.e. E164.
 
 # Install
-`composer require valantic-spryker/phone-number`
+`composer require valantic-spryker-eco/phone-number`
 
 # HowTos Cli
 
